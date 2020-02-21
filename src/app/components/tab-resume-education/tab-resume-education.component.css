@@ -1,0 +1,52 @@
+.resume-experience ul , .resume-education ul {
+    height: 300px;
+}
+
+.resume-experience , .resume-education{
+    padding: 5px;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+li {
+    position: relative;
+    margin: 0;
+    padding-bottom: 1em;
+    padding-left: 20px;
+}
+
+li:before {
+    background-color: #9c27b0;
+    width: 4px;
+    content: '';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 7px;
+}
+
+li:first-child:before {
+    top: 15px;
+}
+
+li:last-child:before {
+    height: 6px;
+}
+
+.bullet {
+    margin-left: -21px;
+    width: 12px;
+    fill: #9c27b0;
+    float: left;
+    padding-right: 10px
+}
+
+.bullet.big {
+    width: 16px;
+    margin-left: -19px;
+    padding-right: 8px
+}

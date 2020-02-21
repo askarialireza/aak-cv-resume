@@ -1,6 +1,6 @@
 <div class="profile-tabs">
   <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
-    <li class="nav-item" *ngFor="let item of profileTabs;let first = first;">
+    <li class="nav-item bg-light rounded" *ngFor="let item of profileTabs;let first = first;">
       <a class="nav-link" [ngClass]="{ 'active' : first }" href="{{item.url}}" role="tab" data-toggle="tab">
       <i class="material-icons">{{item.icon}}</i> {{item.title}}
       </a>

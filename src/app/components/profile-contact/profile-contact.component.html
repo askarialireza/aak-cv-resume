@@ -1,0 +1,11 @@
+<div class="profile-contact">
+  <h5 class="profile-title">Contact</h5>
+  <ul class="fa-ul">
+    <li *ngFor="let item of contactList">
+      <span class="fa-li text-primary">
+        <i class="fas {{item.logo}}"></i>
+      </span>
+      {{item.label}}
+    </li>
+  </ul>
+</div>

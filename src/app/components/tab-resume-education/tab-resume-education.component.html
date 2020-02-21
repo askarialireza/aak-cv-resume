@@ -1,0 +1,19 @@
+<h5 class="profile-title">Education</h5>
+<ul class="mCustomScrollbar" data-mcs-theme="dark-thin">
+  <li *ngFor="let item of educationList;let last = last;">
+    <div class="bullet big">
+      <i class="fas fa-circle text-primary"></i>
+    </div>
+    <div class="education-item px-2 pb-2">
+      <h6 class="text-primary m-0">
+        {{item.startDate}} - 
+        <ng-container *ngIf="item.endDate">{{item.endDate}}</ng-container>
+        <ng-container *ngIf="!item.endDate">Now</ng-container>
+      </h6 >
+      <h5>{{item.academy}}</h5>
+      <h6 class="text-muted">{{item.title}}</h6>
+      <p>{{item.description}}</p>
+    </div>
+    <hr *ngIf="!last" >
+  </li>
+</ul>

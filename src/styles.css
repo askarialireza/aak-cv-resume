@@ -1,9 +1,40 @@
+.page-header .header-filter {
+  background-image: url(assets/image/header1.jpg);
+}
+
+.fa-ul>li {
+  padding: .35rem;
+  position: relative;
+}
+
+.profile-page .profile-tabs {
+  margin-top: 5px;
+}
+
+.page-header.header-gradient {
+  background: rgb(102, 116, 131);
+  background: linear-gradient(180deg, rgba(102, 116, 131, 0) 0%, rgba(102, 116, 131, 0) 0%, rgba(102, 116, 131, 1) 77%, rgba(102, 116, 131, 1) 91%);
+  height: 100%;
+  width: 100%;
+}
+
+.profile-title {
+  border-bottom: 3px solid #9c27b0;
+  width: min-content;
+  padding: .5rem;
+}
+
 .profile-page .profile img {
   max-width: 300px;
+  transform: translate3d(0, -55%, 0);
 }
 
 .profile-page .page-header {
   background-position: center;
+}
+
+.profile-about, .profile-contact {
+  padding: 10px;
 }
 
 .profile-page .profile .name {
@@ -15,9 +46,27 @@
 }
 
 .tab-space {
-  padding: 20px 0;
+  padding: 20px;
+}
+
+.profile-page .description {
+  margin: 0;
+  max-width: 600px;
+}
+
+.main-raised {
+  margin: -55px 30px 0;
 }
 
 @media only screen and (max-width: 768px) {
-
+  .nav-pills .nav-item .nav-link {
+    line-height: 20px;
+    min-width: 20px;
+    padding: 5px;
+  }
+  .nav-pills .nav-item i {
+    display: block;
+    font-size: 30px;
+    padding: 8px 0;
+  }
 }

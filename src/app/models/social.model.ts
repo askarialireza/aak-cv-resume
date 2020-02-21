@@ -1,6 +1,11 @@
 export class Social {
-    public mainUrl: string;
-    public socialId: string;
+
+    constructor() {
+        this.isActive = true;
+    }
+    public name: string;
     public logo: string;
+    public isActive?: boolean;
     public url: string;
+    public class: string;
 }

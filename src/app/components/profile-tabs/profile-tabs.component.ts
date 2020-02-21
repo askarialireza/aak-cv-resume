@@ -15,8 +15,8 @@ export class ProfileTabsComponent implements OnInit {
     this.profileTabs = [
       {title:"Studio",url:"#studio",icon:"camera"},
       {title:"Favorite",url:"#favorite",icon:"favorite"},
-      {title:"Project",url:"#works",icon:"code"},
-      {title:"Contact",url:"#message",icon:"chat"},
+      {title:"Resume",url:"#resume",icon:"format_list_bulleted"},
+      {title:"Contact",url:"#contact",icon:"chat"},
     ];
    }
 

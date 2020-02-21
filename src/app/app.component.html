@@ -1,58 +1,27 @@
 <app-navbar></app-navbar>
 <app-header></app-header>
-<div class="main main-raised">
-  <div class="profile-content p-3">
+<div class="container main main-raised mx-auto">
+  <div class="profile-content p-3 pb-5">
     <div class="container">
       <div class="row">
         <div class="col-md-6 ml-auto mr-auto">
           <app-profile></app-profile>
         </div>
       </div>
-      <div class="description text-center">
-        <p>
-          An artist of considerable range, Chet Faker &#x2014; the name taken by
-          Melbourne-raised, Brooklyn-based Nick Murphy &#x2014; writes, performs
-          and records all of his own music, giving it a warm, intimate feel with
-          a solid groove structure.
-        </p>
+      <div class="row">
+        <div class="col-12 col-md-8 text-left">
+          <app-profile-about></app-profile-about>
+        </div>
+        <div class="col-12 col-md-4">
+          <app-profile-contact></app-profile-contact>
+        </div>
       </div>
       <div class="row">
-        <div class="col-12 col-lg-6 mx-auto">
+        <div class="col-12 col-lg-10 mx-auto">
           <app-profile-tabs></app-profile-tabs>
         </div>
       </div>
-      <div class="tab-content tab-space main-raised">
-        <div class="tab-pane active text-center gallery" id="studio">
-          <div class="row">
-            <div class="col-md-3 ml-auto">
-            </div>
-            <div class="col-md-3 mr-auto">
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane" id="works">
-          <div class="row">
-            <div class="col-md-3 ml-auto">
-            </div>
-            <div class="col-md-3 mr-auto">
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane" id="favorite">
-          <div class="row">
-            <div class="col-md-3 ml-auto">
-            </div>
-            <div class="col-md-3 mr-auto">
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane" id="message">
-          <div class="col-md-9 mx-auto">
-            <app-message></app-message>
-          </div>
-
-        </div>
-      </div>
+      <div class="app-profile-tab-content"></div>
     </div>
   </div>
 </div>
