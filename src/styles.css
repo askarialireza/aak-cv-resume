@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+.profile-page .profile img {
+  max-width: 300px;
+}
+
+.profile-page .page-header {
+  background-position: center;
+}
+
+.profile-page .profile .name {
+  margin-top: -160px;
+}
+
+.btn.btn-just-icon {
+  font-size: 30px;
+}
+
+.tab-space {
+  padding: 20px 0;
+}
+
+@media only screen and (max-width: 768px) {
+
+}

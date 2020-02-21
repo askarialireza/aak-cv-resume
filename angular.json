@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "aak-cv-resume": {
@@ -24,9 +24,14 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/material-design-icons/iconfont/material-icons.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/material-kit/assets/js/core/jquery.min.js",
+              "node_modules/material-kit/assets/js/core/popper.min.js",
+              "node_modules/material-kit/assets/js/core/bootstrap-material-design.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -88,9 +93,14 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/material-design-icons/iconfont/material-icons.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/material-kit/assets/js/core/jquery.min.js",
+              "node_modules/material-kit/assets/js/core/popper.min.js",
+              "node_modules/material-kit/assets/js/core/bootstrap-material-design.min.js"
+            ]
           }
         },
         "lint": {
@@ -119,6 +129,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "aak-cv-resume"
+    }
+  },
+  "defaultProject": "aak-cv-resume",
+  "cli": {
+    "analytics": "d85db65c-687b-46ae-8d65-cac6d4e3f608"
+  }
 }
