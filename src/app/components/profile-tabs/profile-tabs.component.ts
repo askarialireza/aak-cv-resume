@@ -13,10 +13,10 @@ export class ProfileTabsComponent implements OnInit {
   constructor() { 
 
     this.profileTabs = [
-      {title:"Studio",url:"#studio",icon:"camera"},
-      {title:"Favorite",url:"#favorite",icon:"favorite"},
-      {title:"Resume",url:"#resume",icon:"format_list_bulleted"},
-      {title:"Contact",url:"#contact",icon:"chat"},
+      {title:"Studio",url:"#studio",icon:"camera",class:"tab-studio"},
+      {title:"Skills",url:"#skills",icon:"code",class:"tab-skills"},
+      {title:"Resume",url:"#resume",icon:"format_list_bulleted",class:"tab-resume"},
+      {title:"Contact",url:"#contact",icon:"chat",class:"tab-contact"},
     ];
    }
 

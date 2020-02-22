@@ -4,4 +4,5 @@ export class Education {
     public startDate: string;
     public endDate?: string;
     public description : string;
+    public academyUrl?: string;
 }
