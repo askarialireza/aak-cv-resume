@@ -21,6 +21,10 @@ body {
   position: relative;
 }
 
+.app-profile-tab-content {
+  width: 100%;
+}
+
 .profile-page .profile-tabs {
   margin-top: 5px;
 }
@@ -68,11 +72,6 @@ body {
   margin: 0;
   max-width: 600px;
 }
-
-
-/* .main-raised {
-  margin: -55px 0 0;
-} */
 
 .main {
   margin: -130px 0 0;

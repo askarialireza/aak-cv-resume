@@ -29,6 +29,7 @@
               "src/styles.css"
             ],
             "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
               "node_modules/material-kit/assets/js/core/jquery.min.js",
               "node_modules/material-kit/assets/js/core/popper.min.js",
               "node_modules/material-kit/assets/js/core/bootstrap-material-design.min.js",
@@ -101,6 +102,7 @@
               "src/styles.css"
             ],
             "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
               "node_modules/material-kit/assets/js/core/jquery.min.js",
               "node_modules/material-kit/assets/js/core/popper.min.js",
               "node_modules/material-kit/assets/js/core/bootstrap-material-design.min.js",
