@@ -1,7 +1,18 @@
-<div class="progress-container progress-primary">
-  <span class="progress-badge">Primary</span>
-  <div class="progress">
-    <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+<ul class="fa-ul m-1">
+  <li class="px-2 mx-1" *ngFor="let item of items">
+    <label class="mx-1 text-dark">{{item.title}}</label>
+    <div class="progress mx-1">
+      <div class="progress-bar progress-bar-primary" role="progressbar" [attr.aria-valuenow]="item.ability"
+        aria-valuemin="0" aria-valuemax="100" [style.max-width]="item.ability+'%'" >
+      </div>
     </div>
-  </div>
-</div>
+  </li>
+</ul>
+
+<!-- 
+------ FOR ICONS ------
+<span class="fa-li m-1 text-primary">
+  <i class="fab fa-2x fa-angular"></i>
+  <i class="skill-devicon devicon-angularjs-plain"></i>
+</span> 
+-->

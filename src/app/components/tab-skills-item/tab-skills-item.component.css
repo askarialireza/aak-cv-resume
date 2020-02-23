@@ -1,3 +1,25 @@
 .progress-bar {
-    transition-duration: 3s;
+  width: 0;
+  animation: progress 1.5s ease-in-out forwards;
+} 
+
+.skill-devicon {
+  font-size: 28px;
+}
+
+@keyframes progress {
+  from {
+    width: 0;
   }
+  to {
+    width: 100%;
+  }
+} 
+@keyframes show  {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

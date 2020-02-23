@@ -1,6 +1,6 @@
-
 <ng-container *ngFor="let item of socialProfiels">
-  <a href="{{item.url}}" class="btn btn-just-icon btn-link text-secondary mx-1 {{item.class}}" data-toggle="tooltip" title="{{item.name}}">
-  <i class="fab {{item.logo}}"></i>
+  <a href="{{item.url}}" class="btn btn-just-icon btn-link text-secondary mx-1 {{item.class}}" data-placement="bottom"
+    title="" rel="tooltip" [attr.data-original-title]="item.name">
+    <i class="fab {{item.logo}}"></i>
   </a>
-</ng-container> 
+</ng-container>

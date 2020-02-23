@@ -1,5 +1,5 @@
 export class Skill {
     public title: string;
-    public ability: number;
+    public ability: string;
     public logo?: string;
 }

@@ -3,16 +3,20 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>علیرضا عسکری</title>
+  <title>Alireza Askari</title>
   <base href="/" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
     integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-kit/2.0.6/css/material-kit.min.css"
-    integrity="sha256-CiypHk6W7xf4X1Tycd3IpJl/yWJlPvzvYKa7JQTiCHA=" crossorigin="anonymous" />
-  <link rel="stylesheet"
-    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-kit/2.0.6/css/material-kit.min.css"
+    integrity="sha256-CiypHk6W7xf4X1Tycd3IpJl/yWJlPvzvYKa7JQTiCHA=" crossorigin="anonymous" /> -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.2/devicon.min.css"
+    integrity="sha256-4LcvM6Kisp2RIksJbr9MdLdjZrVxALxPqi0SwWmymPI=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
+
 </head>
 
 <body class="profile-page sidebar-collapse bg-dark">
@@ -23,8 +27,13 @@
     integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
   <script>
     $(function () {
-      $('[data-toggle="tooltip"]').tooltip({ placement: 'bottom' })
-    })
+      $('[data-toggle="tooltip"]').tooltip({ placement: 'bottom' });
+      $('[data-toggle="tab"]').first().tab('show');
+      $('[data-toggle="tab"]').on('show.bs.tab', function (e) {
+        console.log(e.target); // newly activated tab;
+        e.relatedTarget // previous active tab
+      });
+    });
   </script>
 </body>
 

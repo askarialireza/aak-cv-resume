@@ -1,0 +1,30 @@
+@media (max-width: 991.98px) { 
+    .navbar-nav .nav-item .nav-link {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .nav-link-title {
+        padding: 15px 10px;
+        margin: 0;
+        position: absolute;
+    } 
+
+    .nav-link-icon {
+        margin: 5px;
+        font-size: 3em;
+    }
+ }
+
+@media (min-width: 992px) {
+    .d-lg-none {
+        display: none;
+    }
+    .nav-link-title {
+        display: none;
+    }
+
+    .nav-link-icon {
+        font-size: 2em;
+    }
+}

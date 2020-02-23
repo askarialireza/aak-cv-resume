@@ -1,6 +1,19 @@
+body {
+  direction: rtl;
+}
 
 .page-header .header-filter {
   background-image: url(assets/image/header1.jpg);
+}
+
+.z-index-2 {
+  position: relative;
+  z-index: 2;
+}
+
+.z-index-1 {
+  position: inherit;
+  z-index: 1;
 }
 
 .fa-ul>li {
@@ -14,7 +27,7 @@
 
 .page-header.header-gradient {
   background: rgb(102, 116, 131);
-  background: linear-gradient(180deg, rgba(102, 116, 131, 0) 0%, rgba(102, 116, 131, 0) 0%, rgba(102, 116, 131, 1) 77%, rgba(102, 116, 131, 1) 91%);
+  background: linear-gradient(-180deg, rgba(102, 116, 131, 0) 0%, rgba(102, 116, 131, 0) 0%, rgba(102, 116, 131, 1) 77%, rgba(102, 116, 131, 1) 91%);
   height: 100%;
   width: 100%;
 }
@@ -34,7 +47,8 @@
   background-position: center;
 }
 
-.profile-about, .profile-contact {
+.profile-about,
+.profile-contact {
   padding: 10px;
 }
 
@@ -55,8 +69,13 @@
   max-width: 600px;
 }
 
-.main-raised {
+
+/* .main-raised {
   margin: -55px 0 0;
+} */
+
+.main {
+  margin: -130px 0 0;
 }
 
 @media only screen and (max-width: 768px) {
