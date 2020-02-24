@@ -9,14 +9,16 @@
         <h6 class="text-primary m-0">
           {{item.startDate}} - 
           <ng-container *ngIf="item.endDate">{{item.endDate}}</ng-container>
-          <ng-container *ngIf="!item.endDate">Now</ng-container>
+          <ng-container *ngIf="!item.endDate">تا کنون</ng-container>
         </h6 >
-        <h5 class="w-auto d-inline">{{item.academy}}</h5> 
-        <a *ngIf="item.academyUrl" class="text-primary" href="{{item.academyUrl}}"><i class="fas fa-link mx-2"></i></a>
+        <h5 class="education-academy">{{item.academy}}</h5> 
+        <a *ngIf="item.academyUrl" class="text-primary" href="{{item.academyUrl}}">
+          <i class="fas fa-link mx-2"></i>
+        </a>
         <h6 class="text-muted">{{item.title}}</h6>
         <p>{{item.description}}</p>
       </div>
-      <hr *ngIf="!last" >
+      <!-- <hr *ngIf="!last" > -->
     </li>
   </ul>
 </div>

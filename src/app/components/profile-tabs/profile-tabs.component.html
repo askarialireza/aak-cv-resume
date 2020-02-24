@@ -1,9 +1,24 @@
 <div class="profile-tabs">
   <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
-    <li class="nav-item bg-dark rounded {{item.class}}" *ngFor="let item of profileTabs;let last = last;">
+    <li class="nav-item bg-dark rounded nav-item-tab {{item.class}}" *ngFor="let item of profileTabs;let last = last;">
       <a class="nav-link" [ngClass]="{ 'active' : last }" [attr.id]="item.title" href="{{item.url}}" role="tab" data-toggle="tab">
-        <i class="material-icons">{{item.icon}}</i> {{item.title}}
+        <i class="nav-link-icon {{item.icon}}"></i>
+        {{item.title}}
       </a>
+    </li>
+    <li class="nav-item dropdown nav-item-dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        لیست صفحات
+      </a>
+      <div class="dropdown-menu">
+        <ng-container *ngFor="let item of profileTabs;let last = last;">
+          <a class="dropdown-item" [attr.id]="item.title" href="{{item.url}}" role="tab" data-toggle="tab">
+            <i class="nav-link-icon {{item.icon}}"></i>
+            {{item.title}}
+          </a>
+          <div class="dropdown-divider" *ngIf="!last"></div>
+        </ng-container>
+      </div>
     </li>
   </ul>
 </div>

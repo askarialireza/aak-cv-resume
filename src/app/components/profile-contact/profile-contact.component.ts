@@ -12,10 +12,10 @@ export class ProfileContactComponent implements OnInit {
   constructor() {
 
     this.contactList = [
-      { label: 'askarialireza373@gmail.com', logo: 'fa-at' },
-      { label: '09393387784', logo: 'fa-mobile' },
+      { label: 'askarialireza373@gmail.com', logo: 'fas fa-at' },
+      { label: '09393387784', logo: 'fas fa-mobile' },
       // { label: '021-44797792', logo: 'fa-phone' },
-      { label: 'Tehran', logo: 'fa-map-marker-alt' },
+      // { label: 'ایران، تهران', logo: 'fa-map-marker-alt' },
     ];
   }
 

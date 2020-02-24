@@ -2,3 +2,44 @@
     color: white;
     z-index: 3;
 }
+
+@media (max-width: 767.98px) {
+    .nav-item-tab {
+        display: none;
+    }
+    .nav-item-dropdown {
+        background-color: #9c27b0;
+        padding: 10px;
+        margin: 0;
+        border-radius: 5px;
+        width: 100%;
+        top: -35px;
+    }
+
+    .nav-item-dropdown a {
+        font-size: larger;
+        font-weight: 400;
+    }
+
+    .nav-item-dropdown .nav-link-icon {
+        margin-left: 10px;
+    }
+
+    .dropdown-item.active, .dropdown-item:active {
+        color: #ffffff !important;
+        text-decoration: none;
+        background-color: #9c27b0;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav-item-dropdown {
+        display: none;
+    }
+
+    .nav-link-icon {
+        margin: 20px auto;
+        display: block;
+        font-size: 2em;
+    }
+}
